@@ -1,0 +1,53 @@
+const mongoose = require('mongoose')
+const restaurantSchema = new mongoose.Schema({
+    name:{
+        type:String,
+        required:true,
+        default:'餐馆名称待定'
+    },
+        image:{
+            type:String,
+            required:true,
+            default:'restaurant.jpg'
+        },
+        stars:{
+            type:Number,
+            required:false,
+            default:'4.0'
+        },
+        averageCost:{
+            type:Number,
+            required:true,
+            default:'100'
+        },
+        distance:{
+            type:String,
+            required:false,
+            default:'2.1'
+        },
+        address:{
+            type:String,
+            required:true
+        },
+        featured:{
+            type:String,
+            required:true
+        },
+        promotion:{
+            type:String,
+            required:false
+        },
+        desc:{
+            type:String,
+            required:true
+        },
+        category:{
+            type:String,
+            required:true,
+            catearr:['火锅','海鲜','烤肉','甜点','西餐','饮品','自助','快餐'],
+            required:true
+        }
+})
+// 创建索引
+restaurantSchema.index({name:'text',desc:'text'})
+module.exports = mongoose.model('Restaurant',restaurantSchema)

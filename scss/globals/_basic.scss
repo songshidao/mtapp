@@ -1,0 +1,113 @@
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    position: relative;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Microsoft Yahei", sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    background-color: #f0efed;
+}
+img{
+    border:none;
+}
+#app {
+    min-height: 100vh;
+    width: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.c-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 50rem;
+    padding: 0 15rem;
+    box-sizing: border-box;
+    background: linear-gradient(135deg,#ffd000,#ffbd00);
+  }
+  .header-city{
+    display: flex;
+    align-items: center;
+    margin-right: 15rem;
+    flex-shrink: 0;
+    font-size: 13rem;
+    font-family: PingFangSC-Medium;
+    img{
+        width:7.875rem;
+        margin-left:4.875rem;
+    }
+  }
+.header-search{
+    flex: 1;
+display: flex;
+align-items: center;
+height: 32rem;
+padding: 0 13rem;
+border-radius: 7.875rem;
+background-color: #fff;
+font-size: 13rem;
+color: #999;
+img{
+    width: 13.875rem;
+margin-right: 6rem;
+}
+}
+
+.me-wrap{
+    margin-left: 15rem;
+flex-shrink: 0;
+ img{
+     width:24rem;
+     vertical-align: top;
+ }
+}
+
+body {
+    font-size: 16rem;
+    background-color: blue;
+}
+
+#app {
+    background-color: pink;
+}
